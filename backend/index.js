@@ -1,8 +1,8 @@
 const express = require("express");
 const { createTodo, updateTodo } = require("./types");
 
+const { PORT } = require("./config");
 const app = express();
-const PORT = 3000;
 
 app.use(express.json());
 
