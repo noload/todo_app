@@ -1,9 +1,7 @@
 const mongoose = require("mongoose");
+const { DB_URL } = require("./config");
 
-
-mongoose.connect(
-  "mongodb+srv://notesafe:vaibhav%40123K@cluster0.fsxrugd.mongodb.net/todos"
-);
+mongoose.connect(DB_URL);
 
 const todoSchema = mongoose.Schema({
   title: String,
